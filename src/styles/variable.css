@@ -1,0 +1,100 @@
+:root{
+    /* web fonts  */
+    --ff-primary:"'Poppins', sans-serif";
+    --ff-secondary:"'Forum', cursive;";
+    /* colors  */
+    --clr-green-accent:"#08404F";
+    --clr-green-accent-100:"#16C2C2";
+    --clr-red-accent:"#B90D38";
+    --clr-red-accent-900:"#432539";
+
+    --clr-secondary:"#FFE2C0";
+    --clr-primary:#131f30;
+    --clr-black:"#282828";
+    --clr-white:"#ffff";
+    /* font sizes  */
+    --fs-h1:7.5rem;
+    --fs-h2:6.125rem;
+    --fs-h3:4.375rem;
+    --fs-h4:3.125rem;
+    --fs-h5:2.185rem;
+    --fs-h6:0.935rem;
+    --fs-p:1rem;
+    /* font weights  */
+    --fw-regular:300;
+    --fw-medium:500;
+    --fw-bold:700;
+    --fw-black:900;
+
+    /* transition  */
+    --br-regular:1.5rem;
+    --br-large:5rem;
+    
+
+}
+
+
+/* custom properties  */
+
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+.primary-title{
+    font-size: var(--fs-h1);
+    text-align: center;
+    font-family: var(--ff-secondary);
+}
+
+.secondary-title{
+    font-size: var(--fs-h2);
+    
+    font-family: var(--ff-secondary);
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    gap:1rem ;
+}
+
+.card{
+    width: 30%;
+}
+.card-title-large{
+    font-size: var(--fs-h4);
+    font-family: var(--ff-secondary);
+}
+.card-title-small{
+    font-size: var(--fs-h5);
+    font-family: var(--ff-secondary);
+}
+
+.button-primary{
+    background-color: var(--clr-red-accent);
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+    min-height: 60px;
+    padding: 0;
+    border-radius:var(--br-large) ;
+    -webkit-border-radius:var(--br-large) ;
+    -moz-border-radius:var(--br-large) ;
+    -ms-border-radius:var(--br-large) ;
+    -o-border-radius:var(--br-large) ;
+}
+.button-secondary{
+    background-color: transparent;
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+    min-height: 60px;
+    padding: 0;
+    border-radius:var(--br-large) ;
+    -webkit-border-radius:var(--br-large) ;
+    -moz-border-radius:var(--br-large) ;
+    -ms-border-radius:var(--br-large) ;
+    -o-border-radius:var(--br-large) ;
+}
