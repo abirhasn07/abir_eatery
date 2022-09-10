@@ -1,20 +1,23 @@
 :root{
     /* web fonts  */
-    --ff-primary:"'Poppins', sans-serif";
-    --ff-secondary:"'Forum', cursive;";
+    --ff-primary:'Poppins', sans-serif;
+    --ff-secondary:'Forum', cursive;
     /* colors  */
-    --clr-green-accent:"#08404F";
-    --clr-green-accent-100:"#16C2C2";
-    --clr-red-accent:"#B90D38";
-    --clr-red-accent-900:"#432539";
+    --clr-green-accent:#08404F;
+    --clr-green-accent-100:#16C2C2;
+    --clr-red-accent:#B90D38;
+    --clr-red-accent-900:#432539;
 
-    --clr-secondary:"#FFE2C0";
+    --clr-secondary:#FFE2C0;
+    --clr-secondary-100:rgba(255, 226, 192,0.6);
     --clr-primary:#131f30;
-    --clr-black:"#282828";
-    --clr-white:"#ffff";
+    --clr-black:#282828;
+    --clr-white:#ffff;
+    /* gradient clr */
+    --gradient-primary: (linear-gradient(360deg,var(--clr-red-accent),var(--clr-red-accent-900)));
     /* font sizes  */
-    --fs-h1:7.5rem;
-    --fs-h2:6.125rem;
+    --fs-h1:6rem;
+    --fs-h2:5.125rem;
     --fs-h3:4.375rem;
     --fs-h4:3.125rem;
     --fs-h5:2.185rem;
@@ -22,6 +25,7 @@
     --fs-p:1rem;
     /* font weights  */
     --fw-regular:300;
+    --fw-regular-400:400;
     --fw-medium:500;
     --fw-bold:700;
     --fw-black:900;
@@ -31,6 +35,19 @@
     --br-large:5rem;
     
 
+}
+
+@media (max-width:600px) {
+    :root{
+         /* font sizes  */
+    --fs-h1:6rem;
+    --fs-h2:5.125rem;
+    --fs-h3:4.375rem;
+    --fs-h4:3.125rem;
+    --fs-h5:2.185rem;
+    --fs-h6:0.700rem;
+    --fs-p:1rem;
+    }
 }
 
 
@@ -45,12 +62,19 @@
     font-size: var(--fs-h1);
     text-align: center;
     font-family: var(--ff-secondary);
+    color: var(--clr-secondary);
+    line-height: 88%;
+    font-weight: var(--fw-regular-400);
+    width: 70%;
+    text-align: center;
 }
 
 .secondary-title{
     font-size: var(--fs-h2);
     
     font-family: var(--ff-secondary);
+    color: var(--clr-secondary);
+    line-height: 100%;
 }
 
 .card-container{
@@ -85,6 +109,9 @@
     -moz-border-radius:var(--br-large) ;
     -ms-border-radius:var(--br-large) ;
     -o-border-radius:var(--br-large) ;
+    text-transform: uppercase;  
+    cursor: pointer; 
+    z-index: 1;         
 }
 .button-secondary{
     background-color: transparent;
@@ -97,4 +124,10 @@
     -moz-border-radius:var(--br-large) ;
     -ms-border-radius:var(--br-large) ;
     -o-border-radius:var(--br-large) ;
+    text-transform: uppercase;
+    border: 2px solid var(--clr-secondary);
+    color: var(--clr-secondary-100);
+    min-width: 200px; 
+    cursor: pointer;  
+    z-index: 1;    
 }
