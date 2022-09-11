@@ -1,0 +1,115 @@
+.about_component {
+	min-height: 100vh;
+	background-color: var(--clr-primary);
+}
+
+.about_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+.about-info{
+    width: 45%;
+ 
+}
+.about_section_title{
+    margin-bottom: 1em;
+}
+
+
+
+.about_section_title::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background-color: var(--clr-secondary-100);
+   
+}
+.about_section-subtitle{
+    color: var(--clr-secondary);
+    margin-block: 1em;
+}
+.about-img{
+    width: 50%;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+}
+
+.about_img_large{
+    width: 90%;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    margin-left: auto;
+    scale: 1;
+}
+.about_img_mini{
+    width: 50%;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    animation: MoveUpDown 5s ease-in-out infinite;
+    -webkit-animation: MoveUpDown 5s ease-in-out infinite;
+}
+@keyframes MoveUpDown {
+    0%, 100% {
+      top: 45%;
+    }
+    50% {
+      top: 50%;
+    }
+  }
+
+
+  @media (max-width:600px) {
+    .about-info{
+        width: 100%;
+        text-align: center;
+        padding: 2em 0;
+        display: grid;
+        place-items: center;
+        padding-block:2rem 0 ;
+       
+    }
+    .about-info h2{
+        font-size:2rem;
+        text-align: center;
+        font-weight: 400;
+        
+    }
+    .about_section-subtitle{
+        font-size:.700rem;
+        font-weight: var(--fw-regular);
+        padding-bottom: 1em;
+    }
+    .about-btn{
+     width: 200px;
+     height: 50px;
+     padding: 0;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about_img_large{
+        width: 100%;
+    }
+    .about_img_mini{
+        display: none;
+    }
+    .about_section_title::before{}
+  }

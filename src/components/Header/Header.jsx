@@ -1,8 +1,16 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import './Header.css';
 import gradient from '../../images/gradient.svg';
+import hero_img from '../../images/hero_img.jpg';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 const Header = () => {
 	const [menu, showMenu] = useState(false);
+	const imgRef = useRef();
+	console.log(imgRef.current);
+
 	return (
 		<header>
 			<div className="container">

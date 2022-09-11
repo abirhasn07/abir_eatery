@@ -1,5 +1,5 @@
 header{
- height: 100vh;
+ min-height: 100vh;
     background-color: var(--clr-primary);
     
 }
@@ -96,6 +96,8 @@ background-color: transparent;
     position: absolute;
 bottom: 0;
 isolation: isolate;
+/* max-height: 300px; */
+height: auto;
 }
 
 
@@ -218,6 +220,9 @@ isolation: isolate;
 .close-btn:hover{
     border: 0.3px solid var(--clr-secondary);
 }
+
+
+
 
 @media (max-width:600px) {
    

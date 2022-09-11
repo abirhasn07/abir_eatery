@@ -17,7 +17,7 @@
     --gradient-primary: (linear-gradient(360deg,var(--clr-red-accent),var(--clr-red-accent-900)));
     /* font sizes  */
     --fs-h1:6rem;
-    --fs-h2:5.125rem;
+    --fs-h2:98px;
     --fs-h3:4.375rem;
     --fs-h4:3.125rem;
     --fs-h5:2.185rem;
@@ -71,7 +71,7 @@
 
 .secondary-title{
     font-size: var(--fs-h2);
-    
+    font-weight: var(--fw-regular-400);
     font-family: var(--ff-secondary);
     color: var(--clr-secondary);
     line-height: 100%;
@@ -102,16 +102,31 @@
     background-color: var(--clr-red-accent);
     font-size: var(--fs-h6);
     font-weight: var(--fw-medium);
-    min-height: 60px;
+    height: 60px;
     padding: 0;
     border-radius:var(--br-large) ;
     -webkit-border-radius:var(--br-large) ;
     -moz-border-radius:var(--br-large) ;
     -ms-border-radius:var(--br-large) ;
     -o-border-radius:var(--br-large) ;
-    text-transform: uppercase;  
-    cursor: pointer; 
-    z-index: 1;         
+    text-transform: uppercase;
+    cursor: pointer;
+    z-index: 1;
+    width: 220px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--clr-secondary);
+    transition:0.3s ease-in ;
+    -webkit-transition:0.3s ease-in ;
+    -moz-transition:0.3s ease-in ;
+    -ms-transition:0.3s ease-in ;
+    -o-transition:0.3s ease-in ;
+}
+.button-primary:hover{
+    background-color: transparent;
+    border: 1px solid var(--clr-secondary);
 }
 .button-secondary{
     background-color: transparent;
@@ -130,4 +145,13 @@
     min-width: 200px; 
     cursor: pointer;  
     z-index: 1;    
+}
+
+.section-title{
+    font-size: var(--fs-h6);
+    text-transform: uppercase;
+    font-weight: var(--fw-medium);
+    font-family: var(--ff-primary);
+    color: var(--clr-secondary);
+    position: relative;
 }
