@@ -1,0 +1,107 @@
+.blog{
+    background-color: var(--clr-primary-100);
+    padding-block: 2em;
+    
+}
+
+.section-header{
+    text-align: center;
+    padding-block: 2rem;
+}
+
+.blog-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog-card{
+    width: 31.5%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.blog-card-img{
+    object-fit: cover;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    transition: 300ms ease-in-out;
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    -ms-transition: 300ms ease-in-out;
+    -o-transition: 300ms ease-in-out;
+    overflow: hidden;
+}
+.blog-card-img:hover{
+    scale: 1.050;
+}
+.blog-date{
+    margin: 0;
+    font-size: var(--fs-h6);
+    font-weight: var(--fw-medium);
+    margin-top: 1em;
+}
+
+.blog-title{
+    font-size: var(--fs-h5);
+    font-family: var(--ff-secondary);
+    font-weight: normal;
+    width: 80%;
+    text-align: center;
+    margin-inline: auto;
+    margin-block: .3em;
+}
+
+.blog-subtitle{
+    color: var(--clr-secondary-100);
+    font-weight: 300;
+    font-size: var(--fs-h6);
+}
+
+.blog-button{
+    width: 40px;
+    height: 40px;
+    border: .5px solid var(--clr-secondary-100);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: transparent;
+    color: var(--clr-secondary-100);
+    cursor: pointer;
+    margin-top: 1em;
+    transition: 300ms ease;
+    -webkit-transition: 300ms ease;
+    -moz-transition: 300ms ease;
+    -ms-transition: 300ms ease;
+    -o-transition: 300ms ease;
+}
+.blog-button:hover{
+    background-color: var(--clr-red-accent);
+    border: 0;
+}
+.blog-icon{
+    rotate: 90deg;
+}
+
+@media (max-width:600px) {
+    .blog-card-container{
+        gap: 2rem;
+    }
+    .blog-card{
+        width: 100%;
+      
+        
+    }
+    .blog-icon{
+        rotate: 90deg;
+    }
+}

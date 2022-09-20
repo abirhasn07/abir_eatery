@@ -1,30 +1,60 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import gradient from '../../images/gradient.svg';
-import hero_img from '../../images/hero_img.jpg';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+import { gsap } from 'gsap';
 
 const Header = () => {
 	const [menu, showMenu] = useState(false);
-	const imgRef = useRef();
-	console.log(imgRef.current);
+	const headerRef = useRef();
+	const titleRef = useRef();
+	const navRef = useRef();
+	const mainRef = useRef();
 
+	useEffect(() => {
+		const title1 = headerRef.current.children[0];
+		const title2 = headerRef.current.children[1];
+		const title3 = headerRef.current.children[2];
+		const p = headerRef.current.nextSibling;
+		const button = p.nextSibling;
+
+		let tl = gsap.timeline({
+			delay: 0,
+			scrollTrigger: {
+				markers: false,
+				trigger: mainRef.current,
+			},
+		});
+
+		tl.to(
+			[title1, title2, title3, p, button],
+			{ duration: 0.5, y: 0, stagger: 0.3, opacity: 1, scale: 1 },
+			0.15,
+		);
+	}, []);
 	return (
-		<header>
+		<header ref={mainRef}>
 			<div className="container">
-				<nav>
+				<nav ref={navRef}>
 					<li className="nav-list">contact</li>
 					<div className="line-effect"></div>
-					<p className="logo">eatery</p>
+					<p className="logo"> eatery</p>
 					<div className="line-effect"></div>
 					<li className="nav-list" onClick={() => showMenu(!menu)}>
 						menu
 					</li>
 				</nav>
 				<div className="hero-section">
-					<h1 className="primary-title">OUTSTANDING EUROPEAN CUISINE</h1>
+					<h1 className="primary-title" ref={headerRef}>
+						<span className="title-span" ref={titleRef}>
+							OUTSTANDING
+						</span>
+						<span className="title-span" ref={titleRef}>
+							EUROPEAN
+						</span>
+						<span className="title-span" ref={titleRef}>
+							CUISINE
+						</span>
+					</h1>
 					<p className="hero-subtitle">
 						We use only the finest local ingredients available and offer
 						seasonal specials throughout the year.

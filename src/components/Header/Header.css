@@ -1,6 +1,7 @@
 header{
  min-height: 100vh;
     background-color: var(--clr-primary);
+  
     
 }
 
@@ -12,6 +13,7 @@ nav {
     align-items: center;
     min-height: 100px;
     color: var(--clr-secondary);
+  
  
     
 }
@@ -19,10 +21,12 @@ nav {
 .logo{
     position: relative;
     font-family: var(--ff-secondary);
-    font-size: var(--fs-h5);
+    font-size: var(--fs-h4);
     width: 20%;
     line-height: 100%;
     text-align: center;
+    font-weight: var(--fw-regular-400);
+    text-transform: uppercase;
 }
 .nav-list{
   width: 10%;
@@ -113,16 +117,33 @@ height: auto;
     
 
 }
+.hero-section h1{
+    background: var(--clr-primary);
+    overflow: hidden;
+}
+.title-span{
+    transform: translateY(100%);
+    display: block;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    opacity: 0;
+}
 
 .hero-subtitle{
-    font-size: var(--fs-h6);
+    font-size: var(--fs-h6-100);
     color: var(--clr-secondary-100);
     text-align: center;
     width: 60%;
     margin-inline: auto;
     z-index: 1;
-   
-   
+    transform: translateY(150%);
+    -webkit-transform: translateY(150%);
+    -moz-transform: translateY(150%);
+    -ms-transform: translateY(150%);
+    -o-transform: translateY(150%);
+    opacity: 0;
 }
 .hero-btn{
     transition: 0.3s ease;
@@ -130,6 +151,8 @@ height: auto;
     -moz-transition: 0.3s ease;
     -ms-transition: 0.3s ease;
     -o-transition: 0.3s ease;
+  scale: 2;
+  opacity: 0;
 }
 .hero-btn:hover{
     background-color: var(--clr-red-accent);
@@ -250,13 +273,15 @@ height: auto;
 
     /* .hero-section */
     .hero-section h1{
-        font-size: var(--fs-h5);
+        font-size: var(--fs-h1);
         width: 90%;
+        line-height: 110%;
     }
     .hero-subtitle{
-        width: 90%;
-        font-size: 0.800rem;
-        line-height:100%;
+        width: 100%;
+        font-size: var(--fs-p);
+        line-height:1.5;
+        font-weight:00;
     }
     .close-btn{
         right: 0;
