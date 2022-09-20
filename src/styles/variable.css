@@ -16,7 +16,7 @@
     --clr-black-900:#0f1a28;
     --clr-white:#ffff;
     /* gradient clr */
-    --gradient-primary: (linear-gradient(360deg,var(--clr-red-accent),var(--clr-red-accent-900)));
+    --gradient-primary: linear-gradient(70deg,hsl(193, 82%, 17%),hwb(345 15% 67%));
     /* font sizes  */
     --fs-h1:7.5rem;
     --fs-h2:98px;

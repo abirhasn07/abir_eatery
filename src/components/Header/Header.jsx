@@ -2,12 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 import gradient from '../../images/gradient.svg';
 import { gsap } from 'gsap';
+import Navbar from '../Navbar/Navbar';
 
 const Header = () => {
-	const [menu, showMenu] = useState(false);
 	const headerRef = useRef();
 	const titleRef = useRef();
-	const navRef = useRef();
 	const mainRef = useRef();
 
 	useEffect(() => {
@@ -27,22 +26,14 @@ const Header = () => {
 
 		tl.to(
 			[title1, title2, title3, p, button],
-			{ duration: 0.5, y: 0, stagger: 0.3, opacity: 1, scale: 1 },
+			{ duration: 0.5, y: 0, stagger: 0.3, opacity: 1 },
 			0.15,
 		);
 	}, []);
 	return (
 		<header ref={mainRef}>
 			<div className="container">
-				<nav ref={navRef}>
-					<li className="nav-list">contact</li>
-					<div className="line-effect"></div>
-					<p className="logo"> eatery</p>
-					<div className="line-effect"></div>
-					<li className="nav-list" onClick={() => showMenu(!menu)}>
-						menu
-					</li>
-				</nav>
+				<Navbar />
 				<div className="hero-section">
 					<h1 className="primary-title" ref={headerRef}>
 						<span className="title-span" ref={titleRef}>
@@ -64,18 +55,6 @@ const Header = () => {
 			</div>
 			<div className="header-gradient">
 				<img src={gradient} alt="" />
-			</div>
-			<div className={!menu ? 'menu' : 'menu active'}>
-				<ul className="menu-list">
-					<li className="menu-list-item">Menu</li>
-					<li className="menu-list-item">Reservation</li>
-					<li className="menu-list-item">Contact</li>
-					<li className="menu-list-item">About</li>
-					<li className="menu-list-item">Blog</li>
-					<button className="close-btn" onClick={() => showMenu(!menu)}>
-						close
-					</button>
-				</ul>
 			</div>
 		</header>
 	);

@@ -1,15 +1,43 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Events.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 // import required modules
 import { Pagination, Autoplay } from 'swiper';
 import { slider } from '../../database/slider';
+import gsap, { Power3 } from 'gsap';
 const Events = () => {
+	const eventRef = useRef();
+	const eventHeader = useRef();
+	const swiperRef = useRef();
+
+	useEffect(() => {
+		let tl = gsap.timeline({
+			delay: 0.1,
+			scrollTrigger: {
+				markers: false,
+				trigger: eventRef.current,
+				start: 'top',
+				end: 'end',
+				scrub: true,
+			},
+		});
+
+		tl.fromTo(
+			swiperRef.current,
+			{
+				scale: 0.7,
+				ease: Power3.easeInOut,
+
+				duration: 0.8,
+			},
+			{ scale: 1, ease: Power3.easeInOut, duration: 1.2, transition: 0.5 },
+		);
+	}, []);
 	return (
-		<section className="event">
+		<section className="event" ref={eventRef}>
 			<div className="container">
-				<div className="event-header">
+				<div className="event-header" ref={eventHeader}>
 					<p className="section-title">WEDDINGS & EVENTS</p>
 					<h2 className="secondary-title">
 						CATERING FOR YOUR WEDDINGS & EVENTS
@@ -23,6 +51,7 @@ const Events = () => {
 				</div>
 				<div className="swiper-container">
 					<Swiper
+						ref={swiperRef}
 						slidesPerView={1.3}
 						spaceBetween={-10}
 						centeredSlides={true}
@@ -30,8 +59,8 @@ const Events = () => {
 							clickable: true,
 						}}
 						autoplay={{
-							delay: 2500,
-							disableOnInteraction: false,
+							delay: 5000,
+							disableOnInteraction: true,
 						}}
 						loop={true}
 						speed={500}

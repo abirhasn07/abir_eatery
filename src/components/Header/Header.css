@@ -172,15 +172,17 @@ height: auto;
     background-color:var(--clr-primary);
     z-index: 999;
     top: -100%;
-    transition:500ms ease-in ;
-    -webkit-transition:500ms ease-in ;
-    -moz-transition:500ms ease-in ;
-    -ms-transition:500ms ease-in ;
-    -o-transition:500ms ease-in ;
+    left: 0;
+    transition:all 800ms ;
+    -webkit-transition:all 800ms ;
+    -moz-transition:all 800ms ;
+    -ms-transition:all 800ms ;
+    -o-transition:all 800ms ;
 }
 
 .menu.active{
     top: 0;
+ 
 }
 
 
@@ -232,19 +234,51 @@ height: auto;
   background: transparent;
   color: var(--clr-secondary);
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 50px;
+  right: 100px;
   transition: 0.3s ease-out;
   -webkit-transition: 0.3s ease-out;
   -moz-transition: 0.3s ease-out;
   -ms-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
+  border: 0.3px solid var(--clr-secondary);
 }
 .close-btn:hover{
-    border: 0.3px solid var(--clr-secondary);
+    background-color: var(--clr-red-accent);
+    border: 1px solid var(--clr-red-accent);
 }
 
+.return-home{
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    font-weight: var(--fw-medium);
+    border:0;
+    cursor: pointer;
+    min-width: 140px;
+    min-height: 40px;
+    font-size: var(--fs-p);
+    background: transparent;
+    color: var(--clr-secondary);
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    border: 0.3px solid var(--clr-secondary);
+    text-align: center;
+    line-height: 40px;
+}
 
+.return-home:hover{
+    background-color: var(--clr-red-accent);
+    border: 1px solid var(--clr-red-accent);
+}
 
 
 @media (max-width:600px) {
@@ -284,7 +318,15 @@ height: auto;
         font-weight:00;
     }
     .close-btn{
-        right: 0;
+        right: 10px;
+        font-size: 12px;
+        min-width: 110px;
+    }
+    .return-home{
+        left: 10px;
+        font-size: 12px;
+        min-width: 130px;
+       
     }
     .menu-list-item{
         font-size: var(--fs-h5);

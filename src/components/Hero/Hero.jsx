@@ -20,7 +20,7 @@ const Hero = () => {
 		});
 		tl.fromTo(
 			imgRef.current,
-			{ clipPath: 'circle(5%)', filter: 'blur(1px)', duration: 0 },
+			{ clipPath: 'circle(9%)', filter: 'blur(1px)', duration: 0 },
 
 			{ clipPath: 'circle(75%)', filter: 'blur(0px)', ease: Power3.easeInOut },
 		);

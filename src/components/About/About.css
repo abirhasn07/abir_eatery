@@ -14,7 +14,7 @@
 .about-info{
     width: 45%;
    
-    opacity: 0;
+    opacity: .2;
   
 }
 .about_section_title{
@@ -37,7 +37,7 @@
     align-items: center;
     height: 100vh;
    
-    opacity: 0;
+    opacity: .2;
 }
 
 .about_img_large{
