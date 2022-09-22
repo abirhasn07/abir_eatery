@@ -17,6 +17,7 @@
     --clr-white:#ffff;
     /* gradient clr */
     --gradient-primary: linear-gradient(70deg,hsl(193, 82%, 17%),hwb(345 15% 67%));
+    --gradient-secondary: linear-gradient(70deg,hsl(193, 82%, 17%),#131f30);
     /* font sizes  */
     --fs-h1:7.5rem;
     --fs-h2:98px;
@@ -24,6 +25,8 @@
     --fs-h4:3.125rem;
     --fs-h5:2.185rem;
     --fs-h6-100:1.35rem;
+    --fs-h6-200:1.125rem;
+
     --fs-h6:0.935rem;
     --fs-p:1rem;
     /* font weights  */
@@ -44,7 +47,10 @@
     :root{
          /* font sizes  */
     --fs-h1:2.815rem;
-    --fs-p:1.115rem
+    --fs-p:1.115rem;
+    --fs-h5:1.4rem;
+    --fs-h3: 3rem;
+    --fs-h4:2rem;
    
     }
 }

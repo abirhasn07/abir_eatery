@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import About from '../components/About/About';
 import Blog from '../components/Blog/Blog';
 import Events from '../components/Events/Events';
@@ -11,7 +11,7 @@ import Hero from '../components/Hero/Hero';
 
 const Home = () => {
 	return (
-		<div>
+		<main className="home_page page">
 			<Header />
 			<Hero />
 			<About />
@@ -21,7 +21,7 @@ const Home = () => {
 			<Blog />
 			<Newsletter />
 			<Footer />
-		</div>
+		</main>
 	);
 };
 

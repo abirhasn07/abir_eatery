@@ -8,11 +8,11 @@ const Hero = () => {
 	const imgRef = useRef();
 	useEffect(() => {
 		let tl = gsap.timeline({
-			delay: 0,
+			delay: 0.5,
 			scrollTrigger: {
 				trigger: heroRef.current,
 				start: 'top',
-				end: 'bottom',
+				end: '0',
 				markers: false,
 				scrub: true,
 				pin: true,
@@ -22,7 +22,12 @@ const Hero = () => {
 			imgRef.current,
 			{ clipPath: 'circle(9%)', filter: 'blur(1px)', duration: 0 },
 
-			{ clipPath: 'circle(75%)', filter: 'blur(0px)', ease: Power3.easeInOut },
+			{
+				clipPath: 'circle(75%)',
+				filter: 'blur(0px)',
+				ease: Power3.easeInOut,
+				duration: 1,
+			},
 		);
 	}, []);
 	return (

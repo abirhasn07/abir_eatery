@@ -1,7 +1,63 @@
 import React from 'react';
-
+import Footer from '../components/Footer/Footer';
+import Navbar from '../components/Navbar/Navbar';
+import Newsletter from '../components/Newsletter/Newsletter';
+import about_banner from '../images/about_banner1.jpg';
+import chef from '../images/chef.jpg';
 const About = () => {
-	return <div>About</div>;
+	return (
+		<section className="about_page page">
+			<div className="container">
+				<Navbar />
+				<div className="about-page-content">
+					<div className="page-header">
+						<h1 className="primary-title">ABOUT US</h1>
+						<p className="section-subtitle">
+							Phaedra, pure but valuable asset. My pillow is how funny that
+							smile carries each client.
+						</p>
+					</div>
+					<div className="banner-content">
+						<img
+							src={about_banner}
+							alt={'couple_dating'}
+							className="about-banner"
+							loading="lazy"
+						/>
+						<h2 className="about_banner_title">
+							the land is flattering to the airline. For us, the course of
+							development is very easy, life is rich. Let the vulputate be
+							followed by the aquiet throat. The bed flatters.
+						</h2>
+					</div>
+					<div className="chef-content">
+						<img
+							src={chef}
+							alt="chef-img"
+							className="chef-img"
+							loading="lazy"
+						/>
+						<div className="chef-info">
+							<h3 className="newsletter-title">EXECUTIVE CHEF MILO NEWMAN</h3>
+							<p>
+								For from this point, it is not the bow itself. But he wants to
+								do homework tomorrow, and he's getting older. Laughter, fear of
+								football, targeted by the high school, a variety of ferment. Let
+								him be free, let him be of life. But now it's a big deal. It's
+								also a superhero and it's not fun.
+							</p>
+							<span>
+								It is necessary to push the kids so that there is no running. No
+								one needs that element now. He needs to drink as the cat needs.
+							</span>
+						</div>
+					</div>
+					<Newsletter />
+					<Footer />
+				</div>
+			</div>
+		</section>
+	);
 };
 
 export default About;

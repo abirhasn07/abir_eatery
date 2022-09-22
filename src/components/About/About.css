@@ -1,6 +1,6 @@
 .about_component {
 	min-height: 100vh;
-	background-color: var(--clr-primary);
+	
     position: relative;
 }
 

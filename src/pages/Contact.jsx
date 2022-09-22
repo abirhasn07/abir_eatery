@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar/Navbar';
 
 const Contact = () => {
 	return (
-		<div className="contact_page">
+		<div className="contact_page page">
 			<div className="circle1"></div>
 			<div className="circle2"></div>
 			<div className="container">

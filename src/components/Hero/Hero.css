@@ -3,7 +3,7 @@
 .hero{
     width: 100%;
     height: 100vh;
-    background-color: var(--clr-primary-100);
+ 
     position: relative;
 
 }

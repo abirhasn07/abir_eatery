@@ -1,6 +1,6 @@
 header{
  min-height: 100vh;
-    background-color: var(--clr-primary);
+  
   
     
 }
@@ -118,7 +118,7 @@ height: auto;
 
 }
 .hero-section h1{
-    background: var(--clr-primary);
+  
     overflow: hidden;
 }
 .title-span{

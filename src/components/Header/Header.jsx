@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './Header.css';
 import gradient from '../../images/gradient.svg';
 import { gsap } from 'gsap';

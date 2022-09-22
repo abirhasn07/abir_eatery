@@ -1,82 +1,404 @@
-.contact_page{
-    width: 100%;
-    min-height: 100vh;
-    background: var(--gradient-primary);
+
+
+.page {
+	width: 100%;
+	min-height: 100vh;
+	background:var(--gradient-secondary);
+	position: relative;
+	isolation: isolate;
+}
+.contact_page > .container {
+	z-index: 9;
+}
+
+.contact_gradient {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	filter: blur(100px);
+	-webkit-filter: blur(100px);
+}
+
+.contact {
+	z-index: 2;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 70vh;
+	gap: 2em;
+}
+.contact-col {
+	margin-block: em;
+}
+
+.contact-col p {
+	margin-bottom: 1em;
+	font-weight: var(--fw-medium);
+	font-size: var(--fs-p);
+}
+
+.contact-col a {
+	font-size: var(--fs-h5);
+	font-family: var(--ff-secondary);
+	color: var(--clr-secondary);
+}
+
+/* reservation page design */
+
+.page-header {
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	margin-inline: auto;
+	text-align: center;
+	padding: 2em 0;
+	/* background-color: red; */
+}
+.section_subtitle{
+	width: 70%;
+	font-size: var(--fs-p);
+	font-weight: var(--fw-medium);
+	margin: 0 auto;
+	text-align: center !important;
+	margin: 0;
+	padding: 0;
+
+}
+
+.reservation_form {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	flex-wrap: wrap;
+}
+
+.reservation_form > .input {
+	min-height: 55px;
+	font-size: 25px;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	background-color: hwb(213 9% 79%);
+	border: transparent;
+	padding-left: 25px;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	color: var(--clr-secondary);
+	font-weight: 400;
+}
+.input:focus {
+	border: none;
+	outline: 0.1px solid var(--clr-secondary);
+}
+
+.name,
+.date,
+.number {
+	width: 40%;
+}
+.email {
+	width: 82%;
+	
+}
+
+.number {
+	padding-right: 25px;
+}
+.phone {
+	width: 40%;
+}
+
+.submit {
+	display: block;
+	width: 80%;
+	font-size: 21px;
+	margin-top: 1.2rem;
+}
+input[type='time'] {
+	padding-right: 15px;
+	width: 40%;
+}
+
+input[type='time']::-webkit-calendar-picker-indicator {
+	width: 20px;
+	height: 20px;
+	background: url('../images/clock-svgrepo-com.svg');
+	background-repeat: no-repeat;
+	background-repeat: cover;
+}
+
+input[type='date']::-webkit-inner-spin-button,
+input[type='date']::-webkit-calendar-picker-indicator {
+	display: none;
+	-webkit-appearance: none;
+}
+
+/* about page  */
+.about_page{
     position: relative;
-    isolation: isolate;
+}
+
+.about-page-content{
+    position: relative;
+}
+.about-banner{
+    border-radius: 1rem;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+}
+
+.about_banner_title{
+   text-align: center;
+   text-transform: uppercase;
+   line-height: 100%;
+   color: var(--clr-secondary);
+   position: absolute;
+   top: calc(65vh );
+   margin: 0;
+   padding: 0;
+   z-index: 2;
+   font-size: var(--fs-h3);
+   font-weight: var(--fw-regular-400);
+   width: 80%;
+   left: 50%;
+   transform:translateX(-50%);
+   
+ 
+   -webkit-transform:translateX(-50%);
+   -moz-transform:translateX(-50%);
+   -ms-transform:translateX(-50%);
+   -o-transform:translateX(-50%);
+   font-family: var(--ff-secondary);
+}
+
+.chef-content{
+margin-block: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chef-img{
+    width: 45%;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
    
 }
-.contact_page>.container{
-    z-index: 9;
+
+.chef-info{
+    width: 50%;
+}
+.chef-info p{
+   margin-block: 1.5em;
+   line-height: 150%;
+}
+.chef-info span{
+    line-height: 150%;
 }
 
-/* .contact_page::after,.contact_page::before{
-   content: '';
-   position: absolute;
-   height: 250px;
-   width: 250px;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-   z-index: -1;
 
- 
+/* blog page  */
+.blog_page_card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	gap: 2.5em;
+	flex-wrap: wrap;
+	width: 90%;
+	background-color: var(--clr-primary-100);
+	border-radius:1rem ;
+	margin: 2rem auto;
+	-webkit-border-radius:1rem ;
+	-moz-border-radius:1rem ;
+	-ms-border-radius:1rem ;
+	-o-border-radius:1rem ;
+}
+.blog_page_card img{
+	width: 50%;
+	height: 350px;
+	object-fit: cover;
+	border-radius: 1rem;
+	-webkit-border-radius: 1rem;
+	-moz-border-radius: 1rem;
+	-ms-border-radius: 1rem;
+	-o-border-radius: 1rem;
+}
+.blog_page_card_info{
+	width: 45%;
+	min-height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 1em;
+}
+.blog_page_card_info h4{
+	font-size: var(--fs-h4);
+	font-family: var(--ff-secondary);
+	width: 90%;
+	font-weight: var(--fw-regular-400);
+}
+.blog_page_subtitle{
+	width: 70%;
+}
+/* blog page  */
+
+/* menu  */
+.foods{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+flex-wrap: wrap;
+gap: 1.5rem;
+}
+.food_items{
+	width: 31%;
+	background-color: var(--clr-primary-100);
+	padding: 1rem;
+	border-radius: .5rem;
+	-webkit-border-radius: .5rem;
+	-moz-border-radius: .5rem;
+	-ms-border-radius: .5rem;
+	-o-border-radius: .5rem;
+}
+.food_img{
+	width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: .3rem;
+	-webkit-border-radius: .3rem;
+	-moz-border-radius: .3rem;
+	-ms-border-radius: .3rem;
+	-o-border-radius: .3rem;
+}
+.food_items_info{
+	padding-block: 1rem;
+}
+.food_name{
+	font-size: var(--fs-h5);
+	font-weight: var(--fw-regular-400);
+	text-transform: capitalize;
+	font-family: var(--ff-secondary);
+}
+.food_description{
+	font-size: var(--fs-p);
+	color: var(--clr-secondary-100);
+	padding-block: .5rem;
+}
+.food_cal{
+	background-color: var(--clr-primary);
+	padding: 1em ;
+	width: 70%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	border-radius: .2rem;
+	-webkit-border-radius: .2rem;
+	-moz-border-radius: .2rem;
+	-ms-border-radius: .2rem;
+	-o-border-radius: .2rem;
 }
 
-.contact_page::after{
-    background-color: var(--clr-red-accent);
-    top: 0;
-    left: 0;
-    filter: blur(150px);
-    -webkit-filter: blur(150px);
-    transition: all 300ms;
-    -webkit-transition: all 300ms;
-    -moz-transition: all 300ms;
-    -ms-transition: all 300ms;
-    -o-transition: all 300ms;
-}
-.contact_page::before{
-    background-color: var(--clr-green-accent);
-    top: 0;
-    right: 0;
-    filter: blur(150px);
-    -webkit-filter: blur(150px);
-} */
+@media (max-width:600px) {
 
+	/* general  */
+	.page-header{
+		width: 100%;
+	}
+	.page-header>.section_subtitle{
+		display: none;
+	}
+	/* general  */
+	.contact-col{
+		margin-block: .2em;
+	}
+	.reservation_form {
+		width: 90%;
+	}
+	.input{
+		width: 100%;
+	}
+	input[type='time'] {
+		width: 100%;
+	}
+	.submit {
+		width: 100%;
+	}
+	.about_banner_title{
+		top: 70vh;
+		width: 100%;
+		font-size: var(--fs-h4);
+	}
+	.about-page-content>.page-header>p{
+		display: none;
+	}
+	.chef-content{
+		flex-direction: column;
+	}
+	.chef-img{
+		width: 100%;
+	}
+	.chef-info{
+		width: 100%;
+		text-align: center;
+		margin-top: 2em;
+	}
+	.blog_page_card{
+		flex-direction: column;
+		width: 100%;
+		padding: 1em;
+		gap: .5em;
+	}
+	.blog_page_card img{
+		width: 100%;
+	}
+	.blog_page_card_info{
+		width: 100%;
+		gap: .5em;
+		min-height: 180px;
+	}
+	.blog_page_card_info h4{
+		width: 100%;
+		
+	}
+	.blog_page_subtitle{
+		width: 100%;
+		
+	}
 
-.contact_gradient{
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    filter: blur(100px);
-    -webkit-filter: blur(100px);
+	.food_items{
+		width: 100%;
+		background-color: var(--clr-secondary);
+	}
 
-}
-
-.contact{
-    z-index: 2;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   min-height: 70vh;
-   gap: 2em;
-}
-.contact-col{
-    margin-block: 1em;
-}
-
-.contact-col p{
-    margin-bottom: 1em;
-    font-weight: var(--fw-medium);
-    font-size: var(--fs-p);
-}
-
-.contact-col a{
-font-size: var(--fs-h5);
-font-family: var(--ff-secondary);
-color: var(--clr-secondary);
+	.food_items_info>*{
+		color: var(--clr-primary);
+	}
+	.food_cal{
+		background-color: var(--clr-secondary-100);
+		border: 1px solid var(--clr-primary-100);
+	}
 }
