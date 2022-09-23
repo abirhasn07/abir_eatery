@@ -1,19 +1,26 @@
 import React from 'react';
+import { useRef } from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
 
 const Reservation = () => {
+	const location = useLocation();
+	const reservationPath = location.pathname;
+	const firstNameRef = useRef();
+	const lastNameRef = useRef();
+	const emailRef = useRef();
+	const phoneRef = useRef();
+	const gestRef = useRef();
+	const dateRef = useRef();
+	const timeRef = useRef();
+
 	return (
 		<section className="reservation_page page">
 			<div className="container">
-				<Navbar />
+				<Navbar reservationPath={reservationPath} />
 				<div className="reservation-content">
 					<div className="page-header">
-						<h1 className="primary-title">RESERVATION</h1>
-						<p className="section_subtitle">
-							When you don't have anything to lose, you discover something
-							wonderful: you're free to take great risks without fear or
-							reservation.
-						</p>
+						<h1 className="secondary-title">RESERVATION</h1>
 					</div>
 					<form action="" className="reservation_form">
 						<input
@@ -23,6 +30,7 @@ const Reservation = () => {
 							placeholder="fist name"
 							required
 							className="name input"
+							ref={firstNameRef}
 						/>
 						<input
 							type="text"
@@ -31,6 +39,7 @@ const Reservation = () => {
 							placeholder="last name"
 							required
 							className="name input"
+							ref={lastNameRef}
 						/>
 						<input
 							type="email"
@@ -39,6 +48,7 @@ const Reservation = () => {
 							placeholder="email"
 							required
 							className="input email"
+							ref={emailRef}
 						/>
 						<input
 							type="tel"
@@ -47,6 +57,7 @@ const Reservation = () => {
 							placeholder="phone"
 							required
 							className="phone input"
+							ref={phoneRef}
 						/>
 						<input
 							type="number"
@@ -56,6 +67,7 @@ const Reservation = () => {
 							className="input number"
 							min="0"
 							max={'100'}
+							ref={gestRef}
 						/>
 						<input
 							type="date"
@@ -63,6 +75,7 @@ const Reservation = () => {
 							id=""
 							placeholder="date"
 							className="input date"
+							ref={dateRef}
 						/>
 						<input
 							type="time"
@@ -70,6 +83,7 @@ const Reservation = () => {
 							id=""
 							placeholder="time"
 							className="input time"
+							ref={timeRef}
 						/>
 						<input
 							type="submit"

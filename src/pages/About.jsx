@@ -1,13 +1,16 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import Newsletter from '../components/Newsletter/Newsletter';
 
 const About = () => {
+	const location = useLocation();
+	const aboutPath = location.pathname;
 	return (
 		<section className="about_page page">
 			<div className="container">
-				<Navbar />
+				<Navbar aboutPath={aboutPath} />
 				<div className="about-page-content">
 					<div className="page-header">
 						<h1 className="primary-title">ABOUT US</h1>

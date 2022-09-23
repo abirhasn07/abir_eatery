@@ -2,12 +2,15 @@ import React from 'react';
 import Navbar from '../components/Navbar/Navbar';
 import Footer from '../components/Footer/Footer';
 import { blogData } from '../database/blog';
+import { useLocation } from 'react-router-dom';
 
 const Blog = () => {
+	const location = useLocation();
+	const blogPath = location.pathname;
 	return (
 		<section className="blog_page page">
 			<div className="container">
-				<Navbar />
+				<Navbar blogPath={blogPath} />
 				<div className="blog_page_content">
 					{blogData.map((item) => {
 						return (

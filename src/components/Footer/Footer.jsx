@@ -24,7 +24,7 @@ const Footer = () => {
 				alt=""
 				className="footer-bg"
 				width={'1040px'}
-				height="350px"
+				height="100px"
 			/>
 		</footer>
 	);

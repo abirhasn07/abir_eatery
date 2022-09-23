@@ -42,6 +42,7 @@ nav {
     text-align: center;
     font-weight: var(--fw-regular-400);
     text-transform: uppercase;
+    color: var(--clr-secondary);
 }
 .nav-list{
   width: 10%;
@@ -64,6 +65,7 @@ nav {
   -ms-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
   text-transform: uppercase;
+  color: var(--clr-secondary);
 }
 .nav-list:hover{
     border: 0.3px solid var(--clr-secondary-100);
@@ -272,6 +274,7 @@ background-color: transparent;
         overflow: hidden;
         font-size: var(--fs-h6);
         font-weight: var(--fw-regular);
+        
     
     }
     .logo{
@@ -280,6 +283,7 @@ background-color: transparent;
         text-align: center;
         font-size: 2rem;
         font-weight: var(--fw-medium);
+     
     }
 
     /* .hero-section */
@@ -310,5 +314,8 @@ background-color: transparent;
     }
     .hero-btn{
         min-height: 50px;
+    }
+    .button-primary{
+        height: 50px ;
     }
 }

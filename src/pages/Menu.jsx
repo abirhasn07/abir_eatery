@@ -1,13 +1,16 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar.jsx';
 import { foodData } from '../database/menu.js';
 import { formatCurrency } from '../utilities/CurrencyConverter.js';
 
 const Menu = () => {
+	const location = useLocation();
+	const menuPath = location.pathname;
 	return (
 		<section className="menu_page page">
 			<div className="container">
-				<Navbar />
+				<Navbar menuPath={menuPath} />
 				<div className="page-header">
 					<h1 className="primary-title">MENU</h1>
 					<p

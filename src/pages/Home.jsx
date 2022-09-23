@@ -6,11 +6,14 @@ import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
 import Newsletter from '../components/Newsletter/Newsletter';
 import Service from '../components/Service/Service';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
+	const location = useLocation();
+	const path = location.pathname;
 	return (
 		<main className="home_page page">
-			<Header />
+			<Header path={path} />
 
 			<About />
 			<Service />

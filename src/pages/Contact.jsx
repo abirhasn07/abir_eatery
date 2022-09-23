@@ -1,14 +1,17 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
 
 const Contact = () => {
+	const location = useLocation();
+	const contactPath = location.pathname;
 	return (
 		<div className="contact_page page">
 			<div className="circle1"></div>
 			<div className="circle2"></div>
 			<div className="container">
 				<div className="nav">
-					<Navbar />
+					<Navbar contactPath={contactPath} />
 				</div>
 				<div className="contact">
 					<h1 className="primary-title">HAVE A QUESTION?</h1>
