@@ -391,14 +391,15 @@ gap: 1.5rem;
 
 	.food_items{
 		width: 100%;
-		background-color: var(--clr-secondary);
+		background: var(--gradient-primary);
 	}
 
 	.food_items_info>*{
-		color: var(--clr-primary);
+		color: var(--clr-secondary);
 	}
 	.food_cal{
 		background-color: var(--clr-secondary-100);
 		border: 1px solid var(--clr-primary-100);
+		color: var(--clr-primary);
 	}
 }

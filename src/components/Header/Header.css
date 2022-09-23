@@ -1,8 +1,23 @@
 header{
- min-height: 100vh;
-  
-  
-    
+  min-height: 100vh;
+  background:
+  url("https://ik.imagekit.io/abirhasan/tr:w-800/image_3_1x__yCrWUq3n3.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663874422157");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  max-width: 1440px;
+  position: relative;
+  isolation: isolate;
+
+}
+header::before{
+   position: absolute;
+   content: '';
+   height: 100%;
+   width: 100%;
+   background-color: var(--clr-primary);
+   opacity: .5;
+   z-index: -1;
 }
 
 nav {
@@ -95,14 +110,7 @@ background-color: transparent;
 
 
 
-.header-gradient{
-    width: 100%;
-    position: absolute;
-bottom: 0;
-isolation: isolate;
-/* max-height: 300px; */
-height: auto;
-}
+
 
 
 /* hero section */
@@ -114,51 +122,19 @@ height: auto;
     align-items: center;
     flex-direction: column;
     gap: 1em;
+   
+
+    position: relative;
     
 
 }
-.hero-section h1{
-  
-    overflow: hidden;
-}
-.title-span{
-    transform: translateY(100%);
-    display: block;
-    -webkit-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    -o-transform: translateY(100%);
-    opacity: 0;
-}
 
-.hero-subtitle{
-    font-size: var(--fs-h6-100);
-    color: var(--clr-secondary-100);
-    text-align: center;
-    width: 60%;
-    margin-inline: auto;
-    z-index: 1;
-    transform: translateY(150%);
-    -webkit-transform: translateY(150%);
-    -moz-transform: translateY(150%);
-    -ms-transform: translateY(150%);
-    -o-transform: translateY(150%);
-    opacity: 0;
-}
-.hero-btn{
-    transition: 0.3s ease;
-    -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease;
-    -ms-transition: 0.3s ease;
-    -o-transition: 0.3s ease;
-  scale: 2;
-  opacity: 0;
-}
-.hero-btn:hover{
-    background-color: var(--clr-red-accent);
-    border: 1px solid var(--clr-red-accent);
-    color: var(--clr-secondary);
-}
+
+
+
+
+
+
 
 /* menu section styling  */
 
@@ -169,7 +145,7 @@ height: auto;
     justify-content: center;
     align-items: center;
     position: absolute;
-    background-color:var(--clr-primary);
+    background:var(--gradient-primary);
     z-index: 999;
     top: -100%;
     left: 0;
@@ -296,6 +272,7 @@ height: auto;
         overflow: hidden;
         font-size: var(--fs-h6);
         font-weight: var(--fw-regular);
+    
     }
     .logo{
         width: 35%;
@@ -329,7 +306,7 @@ height: auto;
        
     }
     .menu-list-item{
-        font-size: var(--fs-h5);
+        font-size: var(--fs-h4);
     }
     .hero-btn{
         min-height: 50px;

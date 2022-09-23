@@ -19,19 +19,19 @@ const Navbar = () => {
 			<div className={!menu ? 'menu' : 'menu active'}>
 				<ul className="menu-list">
 					<Link to="/menu" className="menu-list-item">
-						Menu
+						our food menu
 					</Link>
 					<Link to="/reservation" className="menu-list-item">
-						Reservation
+						book a table
 					</Link>
 					<Link to="/contact" className="menu-list-item">
-						Contact
+						Contact Us
 					</Link>
 					<Link to="/about" className="menu-list-item">
-						About
+						About Us
 					</Link>
 					<Link to="/blog" className="menu-list-item">
-						Blog
+						Our Blog
 					</Link>
 					<button className="close-btn" onClick={() => showMenu(!menu)}>
 						close

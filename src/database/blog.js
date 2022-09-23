@@ -5,7 +5,7 @@ export const blogData = [
         subtitle: "Salad is never more appetizing than when served in a large wooden bowl"
         , details: `Annemarie Rossi, a self-described “regular mom," started a blog to offer simple, healthy, and affordable alternatives to processed foods. Real Food Real Deals follows a four-point checklist for each recipe—real (avoids overly processed ingredients), easy (30 minutes or less), affordable (recipes include the cost breakdown), and flavor (because if it doesn’t taste good, who’s going to eat it?).
 Real Food Real Deals takes traditional favorites and adds a nutritious twist, like avocado deviled eggs or carrot and zucchini fritters. Rossi is also the author of the 2014 cookbook, "Conquering Your Kitchen: How to Plan Meals, Shop, and Cook Real Food with Confidence and Purpose!" The guide features 80 healthy recipes that follow Rossi's four key tenets for cooking.`,
-        title_img: "image/blog (1).jpg"
+        title_img: "https://ik.imagekit.io/abirhasan/tr:w-300/blog__1__vXisuUTuf.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877344577"
         , id: 1
     },
     {
@@ -14,7 +14,8 @@ Real Food Real Deals takes traditional favorites and adds a nutritious twist, li
         subtitle: "Salad is never more appetizing than when served in a large wooden bowl"
         , details: `Annemarie Rossi, a self-described “regular mom," started a blog to offer simple, healthy, and affordable alternatives to processed foods. Real Food Real Deals follows a four-point checklist for each recipe—real (avoids overly processed ingredients), easy (30 minutes or less), affordable (recipes include the cost breakdown), and flavor (because if it doesn’t taste good, who’s going to eat it?).
 Real Food Real Deals takes traditional favorites and adds a nutritious twist, like avocado deviled eggs or carrot and zucchini fritters. Rossi is also the author of the 2014 cookbook, "Conquering Your Kitchen: How to Plan Meals, Shop, and Cook Real Food with Confidence and Purpose!" The guide features 80 healthy recipes that follow Rossi's four key tenets for cooking.`,
-        title_img: "image/blog (2).jpg"
+
+        title_img: "https://ik.imagekit.io/abirhasan/tr:w-300/blog__3__DvOu3ESZC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877345101"
         , id: 2
     },
     {
@@ -31,7 +32,7 @@ Real Food Real Deals takes traditional favorites and adds a nutritious twist, li
         While pork and beef sometimes get all the love when it comes to south-of-the-border food, we love using leaner white meat for healthy Mexican-inspired weeknight meals. Chicken pairs SO well with cheese, avocado, and spices, in everything from flautas (pretty much taquitos + chimichangas, if you’re unfamiliar) to quesadillas. Grab a pack of tortillas (or make your own!), and you’ll have myriad different options for how to serve your chicken.
         
         Want even more chicken inspiration? Try our stuffed or baked chicken recipes too.`,
-        title_img: "image/blog (3).jpg"
+        title_img: "https://ik.imagekit.io/abirhasan/tr:w-300/blog__2__jaR_TIB9e.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877344636"
         , id: 3
     },
 ]

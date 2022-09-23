@@ -11,29 +11,7 @@ const Events = () => {
 	const eventHeader = useRef();
 	const swiperRef = useRef();
 
-	useEffect(() => {
-		let tl = gsap.timeline({
-			delay: 0.1,
-			scrollTrigger: {
-				markers: false,
-				trigger: eventRef.current,
-				start: 'top',
-				end: 'end',
-				scrub: true,
-			},
-		});
-
-		tl.fromTo(
-			swiperRef.current,
-			{
-				scale: 0.7,
-				ease: Power3.easeInOut,
-
-				duration: 0.8,
-			},
-			{ scale: 1, ease: Power3.easeInOut, duration: 1.2, transition: 0.5 },
-		);
-	}, []);
+	useEffect(() => {}, []);
 	return (
 		<section className="event" ref={eventRef}>
 			<div className="container">
@@ -59,7 +37,7 @@ const Events = () => {
 							clickable: true,
 						}}
 						autoplay={{
-							delay: 5000,
+							delay: 10000,
 							disableOnInteraction: true,
 						}}
 						loop={true}

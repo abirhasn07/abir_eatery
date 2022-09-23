@@ -1,22 +1,27 @@
 export const slider = [
     {
-        img: "image/slider (1).jpg",
+        img: "https://ik.imagekit.io/abirhasan/tr:w-600/image_8_0ZVfy4Ff4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1663877496059",
         id: 1,
     },
 
     {
-        img: "image/slider (2).jpg",
+        img: "https://ik.imagekit.io/abirhasan/tr:w-600/slider__3__v1sbPQZM8.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877341321",
         id: 2,
     },
 
     {
-        img: "image/slider (3).jpg",
+        img: "https://ik.imagekit.io/abirhasan/tr:w-600/slider__2__d8bAYO1yI.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877340431",
         id: 3,
     },
 
     {
-        img: "image/slider (4).jpg",
+        img: "https://ik.imagekit.io/abirhasan/tr:w-600/slider__1__OzL6MbT1g.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877339774",
         id: 4,
+    },
+
+    {
+        img: "https://ik.imagekit.io/abirhasan/tr:w-600/slider__4__y2ZHjUe0x.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663877339921",
+        id: 5,
     },
 
 ]

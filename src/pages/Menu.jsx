@@ -32,6 +32,8 @@ const Menu = () => {
 									alt={item.foodName}
 									loading="lazy"
 									className="food_img"
+									width={'300px'}
+									height={'225px'}
 								/>
 								<div className="food_items_info">
 									<h5 className="food_name">{item.foodName}</h5>

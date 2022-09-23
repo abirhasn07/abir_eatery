@@ -1,65 +1,35 @@
 import React, { useEffect, useRef } from 'react';
-import about from '../../images/About.jpg';
-import about_mini from '../../images/About_mini.jpeg';
+
 import './About.css';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
 	const infoRef = useRef();
-	const imgRef = useRef();
+
 	const aboutRef = useRef();
 
-	useEffect(() => {
-		let tl = gsap.timeline({
-			delay: 0,
-			scrollTrigger: {
-				trigger: aboutRef.current,
-				start: 'top',
-				end: 'bottom',
-				markers: false,
-				scrub: true,
-				pin: true,
-			},
-		});
-		tl.to([infoRef.current, imgRef.current], {
-			duration: 1,
-
-			stagger: 1,
-			opacity: 1,
-
-			scrollTrigger: {
-				trigger: aboutRef.current,
-				scrub: 1,
-			},
-		});
-	}, []);
+	useEffect(() => {}, []);
 	return (
 		<section className="about_component" ref={aboutRef}>
 			<div className="container about_container">
 				<div className="about-info" ref={infoRef}>
-					<p className="section-title about_section_title">About us</p>
-					<h2 className="secondary-title">
-						<span>EATERY</span> <span>GOURMET</span> <span>RESTAURANT</span>
-					</h2>
+					<h2 className="secondary-title">OUR STORY</h2>
 					<p className="about_section-subtitle">
-						Laughter is brightest in the place where food is good, good food
-						always makes your mood good,welcome to our place
+						Eatery is a Spanish restaurant in Madrid, founded in 1725, that is
+						the oldest restaurant in the world in continuous operation. The
+						artist Francisco de Goya worked in Café Botín as a waiter while
+						waiting to get accepted into the Royal Academy of Fine Arts.
 					</p>
 					<div className="button-primary about-btn ">MORE ABOUT US</div>
 				</div>
-				<div className="about-img" ref={imgRef}>
+				<div className="about-img">
 					<img
-						src={about}
-						alt="eatery restaurant"
+						src="https://ik.imagekit.io/abirhasan/tr:w-400/kristian-angelo-sLYKdnVQzZQ-unsplash_1__UlWQdKrI_D.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663878268522"
+						alt="Eatery is a Spanish restaurant in Madrid, founded in 1725, that is the oldest restaurant in the world in continuous operation. The
+						artist Francisco de Goya worked in Café Botín as a waiter while
+						waiting to get accepted into the Royal Academy of Fine Arts"
 						loading="lazy"
-						className="about_img_large"
-					/>
-					<img
-						src={about_mini}
-						alt="eatery restaurant"
-						loading="lazy"
-						className="about_img_mini"
+						height={'500px'}
+						width="500px"
 					/>
 				</div>
 			</div>

@@ -2,8 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 import Newsletter from '../components/Newsletter/Newsletter';
-import about_banner from '../images/about_banner1.jpg';
-import chef from '../images/chef.jpg';
+
 const About = () => {
 	return (
 		<section className="about_page page">
@@ -19,7 +18,7 @@ const About = () => {
 					</div>
 					<div className="banner-content">
 						<img
-							src={about_banner}
+							src="https://ik.imagekit.io/abirhasan/about_banner1_j5ET2r0Ht.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663834068667"
 							alt={'couple_dating'}
 							className="about-banner"
 							loading="lazy"
@@ -27,12 +26,12 @@ const About = () => {
 						<h2 className="about_banner_title">
 							the land is flattering to the airline. For us, the course of
 							development is very easy, life is rich. Let the vulputate be
-							followed by the aquiet throat. The bed flatters.
+							followed by the aquiet throat.
 						</h2>
 					</div>
 					<div className="chef-content">
 						<img
-							src={chef}
+							src="https://ik.imagekit.io/abirhasan/chef_CkoiBRsjt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1663834070177"
 							alt="chef-img"
 							className="chef-img"
 							loading="lazy"

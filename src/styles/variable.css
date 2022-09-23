@@ -8,7 +8,7 @@
     --clr-red-accent:#B90D38;
     --clr-red-accent-900:#432539;
 
-    --clr-secondary:#FFE2C0;
+    --clr-secondary:#E7B377;
     --clr-secondary-100:rgba(255, 226, 192,0.6);
     --clr-primary:#131f30;
     --clr-primary-100:#172536;
@@ -89,6 +89,17 @@
     line-height: 100%;
 }
 
+.hero-subtitle{
+    font-size: 24px;
+    color: var(--clr-secondary);
+    text-align: center;
+    width: 60%;
+    margin-inline: auto;
+    z-index: 1;
+    line-height: 135%;
+
+}
+
 .card-container{
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +110,7 @@
 }
 
 .card{
-    width: 30%;
+    width: 32%;
 }
 .card-title-large{
     font-size: var(--fs-h4);
