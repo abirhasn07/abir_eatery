@@ -5,7 +5,7 @@ import 'swiper/css';
 // import required modules
 import { Pagination, Autoplay } from 'swiper';
 import { slider } from '../../database/slider';
-import gsap, { Power3 } from 'gsap';
+
 const Events = () => {
 	const eventRef = useRef();
 	const eventHeader = useRef();

@@ -12,7 +12,13 @@ const Blog = () => {
 					{blogData.map((item) => {
 						return (
 							<div className="blog_page_card" key={item.id}>
-								<img src={item.title_img} alt={item.title} loading="lazy" />
+								<img
+									src={item.title_img}
+									alt={item.title}
+									loading="lazy"
+									width={'400px'}
+									height="250px"
+								/>
 								<div className="blog_page_card_info">
 									<p>{item.date}</p>
 									<h4>{item.title}</h4>

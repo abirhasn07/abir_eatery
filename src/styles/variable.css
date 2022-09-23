@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Forum";
+    src: url("../Fonts/Forum-Regular.ttf")
+  }
+@font-face {
+    font-family: "Poppins";
+    src: url("../Fonts/Poppins/Poppins-Light.ttf"),url(../Fonts/Poppins/Poppins-Medium.ttf);
+  
+  }
+
 :root{
     /* web fonts  */
     --ff-primary:'Poppins', sans-serif;

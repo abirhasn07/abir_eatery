@@ -19,7 +19,13 @@ const Footer = () => {
 					<li className="footer-item">CHANGELOG</li>
 				</ul>
 			</div>
-			<img src={bg} alt="" className="footer-bg" />
+			<img
+				src={bg}
+				alt=""
+				className="footer-bg"
+				width={'1040px'}
+				height="350px"
+			/>
 		</footer>
 	);
 };

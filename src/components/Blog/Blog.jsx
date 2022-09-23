@@ -20,6 +20,7 @@ const Blog = () => {
 										alt={item.title}
 										className="blog-card-img"
 										height={'250px'}
+										width={'300px'}
 									/>
 								</div>
 								<div className="blog-card-info">
