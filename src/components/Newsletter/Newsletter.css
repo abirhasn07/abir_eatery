@@ -58,7 +58,7 @@ padding-block: .2em 0;
     flex-wrap: wrap;
 }
 
-.newsletter-form input[type="email"]{
+.newsletter-email{
     border: 0;
     min-height: 60px;
     border-radius:var(--br-large);
@@ -74,6 +74,9 @@ padding-block: .2em 0;
     text-transform: uppercase;
     background-color: var(--clr-primary);
     padding-left: 28px;
+}
+.newsletter-email.none{
+    display: none;
 }
 
 @media (max-width:600px) {

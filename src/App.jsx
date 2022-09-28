@@ -9,6 +9,7 @@ import Reservation from './pages/Reservation';
 import Error from './pages/Error';
 
 const App = () => {
+
 	return (
 		<Routes>
 			<Route element={<Home />} path="/" />

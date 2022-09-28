@@ -83,7 +83,7 @@
 
 .reservation_form > .input {
 	min-height: 55px;
-	font-size: 25px;
+	font-size: 20px;
 	letter-spacing: 2.5px;
 	text-transform: uppercase;
 	background-color: hwb(213 9% 79%);
@@ -127,16 +127,12 @@
 	margin-top: 1.2rem;
 }
 input[type='time'] {
-	padding-right: 15px;
+	padding-right: 0px;
 	width: 40%;
 }
 
 input[type='time']::-webkit-calendar-picker-indicator {
-	width: 20px;
-	height: 20px;
-	background: url('../images/clock-svgrepo-com.svg');
-	background-repeat: no-repeat;
-	background-repeat: cover;
+	display: none;
 }
 
 input[type='date']::-webkit-inner-spin-button,
@@ -338,9 +334,12 @@ gap: 1.5rem;
 	}
 	.reservation_form {
 		width: 90%;
+	
 	}
+	
 	.input{
 		width: 100%;
+
 	}
 	input[type='time'] {
 		width: 100%;

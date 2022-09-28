@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-
+import React, { useState, useRef, useEffect } from 'react';
 
 import { Link } from 'react-router-dom';
 
@@ -12,10 +11,25 @@ const Navbar = ({
 	aboutPath,
 }) => {
 	const [menu, showMenu] = useState(false);
-
+	// ANIMATION
+	const nav = useRef();
+	const [activeNav, setActiveNav] = useState([]);
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0];
+				if (entry.isIntersecting) {
+					observer.unobserve(entry.target);
+				}
+				setActiveNav(entry.isIntersecting);
+			},
+			{ threshold: 0 },
+		);
+		observer.observe(nav.current);
+	}, [activeNav]);
 	return (
 		<>
-			<nav>
+			<nav className={activeNav ? 'active' : ''} ref={nav}>
 				{!reservationPath ? (
 					<Link to="/reservation" className="nav-list">
 						book a table

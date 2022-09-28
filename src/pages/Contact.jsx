@@ -5,6 +5,9 @@ import Navbar from '../components/Navbar/Navbar';
 const Contact = () => {
 	const location = useLocation();
 	const contactPath = location.pathname;
+
+	// TIMES DEFAULT VALUE
+
 	return (
 		<div className="contact_page page">
 			<div className="circle1"></div>

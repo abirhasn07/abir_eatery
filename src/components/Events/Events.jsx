@@ -5,6 +5,7 @@ import 'swiper/css';
 // import required modules
 import { Pagination, Autoplay } from 'swiper';
 import { slider } from '../../database/slider';
+import { Link } from 'react-router-dom';
 
 const Events = () => {
 	const eventRef = useRef();
@@ -25,7 +26,9 @@ const Events = () => {
 						—mutton, lettuce and tomato sandwich, where the mutton is nice and
 						lean and the tomato is ripe.
 					</p>
-					<button className="button-primary">BOOK A CATERING</button>
+					<Link to="/reservation" className="button-primary">
+						BOOK A CATERING
+					</Link>
 				</div>
 				<div className="swiper-container">
 					<Swiper
